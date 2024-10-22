@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.CalculatorPage"
+             Title="Hesap Makinesi">
+
+    <StackLayout Padding="30" VerticalOptions="Center">
+        <Entry x:Name="Number1Entry" Placeholder="Sayı 1" Keyboard="Numeric" />
+        <Entry x:Name="Number2Entry" Placeholder="Sayı 2" Keyboard="Numeric" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10" Margin="0,10,0,0">
+            <Button Text="Topla" Clicked="OnAddClicked" />
+            <Button Text="Çıkar" Clicked="OnSubtractClicked" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10" Margin="0,10,0,0">
+            <Button Text="Çarp" Clicked="OnMultiplyClicked" />
+            <Button Text="Böl" Clicked="OnDivideClicked" />
+        </StackLayout>
+
+        <Label x:Name="ResultLabel" FontSize="Large" TextColor="Black" Margin="0,10,0,0"/>
+    </StackLayout>
+</ContentPage>
